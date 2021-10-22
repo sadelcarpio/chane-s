@@ -4,41 +4,23 @@
     --font-color: #f4f1de;
 }
 
-* {
+* { /* Directivas generales */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: var(--font-color);
 }
 
-html {
+html { /* Documento total */
     font-size: 62.5%;
     font-family: 'Roboto Condensed', 'sans-seriff';
 }
 
-body {
+body { /* contenedor total */
     width: 100vw;
 }
 
-main {
-    width: 100vw;
-    background-color: var(--secondary-color);
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--primary-color);
-    width: 100vw;
-    height: 8vh;
-}
-
-footer a{
-    position: relative;
-    left: 1rem;
-}
+/* Header */
 
 header {
     display: inline-flex;
@@ -49,6 +31,8 @@ header {
     height: 10vh;
     background-color: var(--primary-color);
 }
+
+/* Contenidos del header  */
 
 .welcome {
     display: flex;
@@ -71,6 +55,8 @@ header {
     width: 6rem;
     left: 1rem;
 }
+
+/* Burger icon */
 
 .container {
     display: inline-block;
@@ -105,6 +91,15 @@ opacity: 0;
 transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+/* Contenedor principal */
+
+main {
+    width: 100vw;
+    background-color: var(--secondary-color);
+}
+
+/* Acerca de */
+
 .about {
     width: 100vw;
     display: flex;
@@ -129,6 +124,8 @@ transform: rotate(45deg) translate(-8px, -8px) ;
     width: 100vw;
 }
 
+/* Cheesecakes */
+
 #lasteventimg {
     width:100vw;
     overflow-x:scroll;
@@ -146,3 +143,20 @@ li {
 li img {
     height: 50vh;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 8vh;
+}
+
+footer a{
+    position: relative;
+    left: 1rem;
+}
+
+
