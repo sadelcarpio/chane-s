@@ -1,23 +1,107 @@
-h2 {
-    color: #333;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif
+:root { /* declaración de variables */
+    --primary-color: #6a040f;
+    --secondary-color: #9b2226;
+    --font-color: #f4f1de;
 }
 
-#title {
-    color: #333;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--font-color);
 }
 
-li {
-    color: #333;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto Condensed', 'sans-seriff';
+}
+
+body {
+    width: 100vw;
+}
+
+main {
+    width: 100vw;
+    height: 82vh;
+    background-color: var(--secondary-color);
 }
 
 footer {
-    color: #333;
-    font-size: large;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 8vh;
+}
+
+footer a{
+    position: relative;
+    left: 1rem;
+}
+
+header {
+    display: inline-flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--primary-color);
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome #title{
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    display: block;
+    width: 8rem;
+}
+
+.logo #icon {
+    position: relative;
+    width: 6rem;
+    left: 1rem;
+}
+
+.container {
+    /* display: inline-block; */
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 5px;
+background-color: #f4f1de;
+margin: 6px 0;
+transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+/* Fade out the second bar */
+.change .bar2 {
+opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+transform: rotate(45deg) translate(-8px, -8px) ;
 }
