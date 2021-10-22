@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head> <!--Va el cerebro (conexiones necesarias)-->
-        <meta charset="UTF-8"> <!-- Los caracteres especiales se tratan como UTF-8 (emojis)-->
-        <meta name="description" content="Esta página te mostrará fotos de gatos"> <!-- Da descripción en el buscador -->
-        <meta name="robots" content="index,follow"> <!-- Autoriza a los robots de búsqueda para ayudar a encontrar nuestra pag-->
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="description" content="Postres deliciosos, solo en Chane's">
+        <meta name="robots" content="index,follow"> 
         <title>Chane's</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--permite que el proyecto sea responsive-->
-        <link rel="stylesheet" href="./css/style.css"> <!--Vincular hoja de estilos -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">  
+        <link rel="stylesheet" href="">
         <link rel="icon" href="./imgs/logo/chane's_pfp_rmbg.png" type="image/icon type">
     </head>
-    <body> <!-- Va lo que es visible para el usuario-->
+    <body> 
         <header>
-            <h1 id="title"><img src="./imgs/logo/chane's_pfp_rmbg.png" alt="Chane's logo" width="10%">
-                Nuestros Productos</h1>
+            <div class="logo">
+                <img id ="icon" src="./imgs/logo/chane's_pfp_rmbg.png" alt="Chane's logo">
+            </div>
+            <div class="welcome">
+                <h1 id="title">Chane's</h1>
+            </div>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </header>
         <main>
             <section>
-                <h2>Tortas</h2>
-                <ul> <!--Lista sin orden, target="_blank" abre el vínculo en otra ventana-->
-                    <li>Tortas temáticas</li>
-                    <img src="./imgs/torta_buttercream.png" alt="torta_buttercream" width="20%">
-    
-                    <li>Cheesecakes </li>
-                    <img src="./imgs/torta_maracuya.png" alt="torta_maracuya" width="20%">
-    
-                    <li>Queques</li>
-                    <img src="" alt="">
-                    
-                    <li>Tortas saludables</li>
-                    <li>Más ...</li>
-                    <img src="./imgs/crema_volteada.png" alt="crema_volteada" width="20%">
-                </ul> 
             </section>
-            <section>
-                <h2>Bocaditos</h2>
-                <ul>
-                    <li>Bocaditos dulces</li>
-                    <img src="./imgs/" alt="">
-                    <li>Bocaditos salados</li>
-                    <img src="./imgs/empanadas.png" alt="empanadas"width="20%">
-                </ul>
-            </section>
-
         </main>
         <footer>
-            <a style="text-decoration: none" href="#">Mi primera página en HTML hecha desde cero ❤️</a>
+            <a style="text-decoration: none" href="#">Cont&aacute;ctanos: ❤️</a>
         </footer>
+        <script src="./js/javascript.js"></script>
     </body>
 </html>
