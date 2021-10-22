@@ -22,7 +22,6 @@ body {
 
 main {
     width: 100vw;
-    height: 82vh;
     background-color: var(--secondary-color);
 }
 
@@ -44,7 +43,8 @@ footer a{
 header {
     display: inline-flex;
     align-items: center;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100vw;
     height: 10vh;
     background-color: var(--primary-color);
@@ -73,7 +73,6 @@ header {
 }
 
 .container {
-    /* display: inline-block; */
     display: inline-block;
     cursor: pointer;
     position: absolute;
@@ -93,8 +92,8 @@ transition: 0.4s;
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
     transform: rotate(-45deg) translate(-9px, 6px) ;
-  }
-  
+}
+
 /* Fade out the second bar */
 .change .bar2 {
 opacity: 0;
@@ -104,4 +103,46 @@ opacity: 0;
 .change .bar3 {
 -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
 transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.about {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro{
+    display: block;
+    margin: auto;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.presentacion{
+    width: 100vw;
+}
+
+.presentacion #presentacion {
+    width: 100vw;
+}
+
+#lasteventimg {
+    width:100vw;
+    overflow-x:scroll;
+}
+ul {
+    list-style:none;
+    display: block;
+    white-space:nowrap;
+}
+
+li {
+    width: 100vw;
+    display:inline;}
+
+li img {
+    height: 50vh;
 }
