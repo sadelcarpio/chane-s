@@ -191,16 +191,6 @@ footer {
     flex-basis: 30vw;
 }
 
-.box3 {
-    width: 10vw;
-    height: 5vh;
-}
-
-.box4 {
-    width: 10vw;
-    height: 5vh;
-}
-
 #myLinks {
     display: none;
     background-color: rgb(71, 9, 9);
