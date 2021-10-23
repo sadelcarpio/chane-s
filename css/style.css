@@ -2,6 +2,7 @@
     --primary-color: #6a040f;
     --secondary-color: #9b2226;
     --font-color: #f4f1de;
+    --font: 'Lobster Two';
 }
 
 * { /* Directivas generales */
@@ -9,11 +10,17 @@
     margin: 0;
     padding: 0;
     color: var(--font-color);
+    max-width: 100%;
 }
 
 html { /* Documento total */
     font-size: 62.5%;
-    font-family: 'Roboto Condensed', 'sans-seriff';
+    font-family: var(--font), serif;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
 }
 
 body { /* contenedor total */
@@ -42,7 +49,6 @@ header {
 
 .welcome #title{
     font-size: 4rem;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo {
@@ -67,17 +73,18 @@ header {
   }
 
 .bar1, .bar2, .bar3 {
-width: 35px;
-height: 5px;
-background-color: #f4f1de;
-margin: 6px 0;
+width: 3.5rem;
+height: 0.5rem;
+background-color: var(--font-color);
+margin: .6rem 0;
 transition: 0.4s;
+border-radius: .3rem;
 }
 
 /* Rotate first bar */
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-.9rem, .6rem) ;
 }
 
 /* Fade out the second bar */
@@ -104,17 +111,20 @@ main {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    padding-bottom: 2rem;
 }
 
 .intro{
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    padding-left: 1rem;
-    padding-top: 1rem;
-    font-size: 1.6rem;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
 }
 
+#intro {
+    margin: auto;
+}
 
 .presentacion{
     width: 100vw;
@@ -126,9 +136,26 @@ main {
 
 /* Cheesecakes */
 
-#lasteventimg {
+.scroll-title {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 3rem;
+}
+
+.scroll-title-box {
+    margin: auto;
+    display: block;
+}
+
+#scroll-title {
+    font-size: 3rem;
+}
+
+#scroll {
     width:100vw;
     overflow-x:scroll;
+    overflow-y: hidden;
 }
 ul {
     list-style:none;
@@ -138,17 +165,22 @@ ul {
 
 li {
     width: 100vw;
-    display:inline;}
+    display: inline;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
 
 li img {
-    height: 50vh;
+    height: 40vh;
+    border-radius: 2rem;
+    max-width: 95%
 }
 
 footer {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--primary-color);
     width: 100vw;
     height: 8vh;
@@ -157,6 +189,28 @@ footer {
 footer a{
     position: relative;
     left: 1rem;
+}
+
+.box1 {
+    flex-basis: 30vw;
+}
+
+.box2 {
+    background-color: var(--font-color);
+    width: 10vw;
+    height: 5vh;
+}
+
+.box3 {
+    background-color: var(--font-color);
+    width: 10vw;
+    height: 5vh;
+}
+
+.box4 {
+    background-color: var(--font-color);
+    width: 10vw;
+    height: 5vh;
 }
 
 
