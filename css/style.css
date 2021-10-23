@@ -186,19 +186,11 @@ footer {
     height: 8vh;
 }
 
-footer a{
-    position: relative;
-    left: 1rem;
-}
-
 .box1 {
     flex-basis: 30vw;
 }
 
 .box2 {
-    background-color: var(--font-color);
-    width: 10vw;
-    height: 5vh;
 }
 
 .box3 {
