@@ -192,13 +192,11 @@ footer {
 }
 
 .box3 {
-    background-color: var(--font-color);
     width: 10vw;
     height: 5vh;
 }
 
 .box4 {
-    background-color: var(--font-color);
     width: 10vw;
     height: 5vh;
 }
@@ -211,9 +209,9 @@ footer {
 #myLinks a {
     color: var(--font-color);
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 2rem;
     display: block;
-    height: 3rem;
+    height: 3.5rem;
     padding-top: 0.5rem;
     padding-left: 0.8rem;
     width: 100vw;
@@ -221,8 +219,8 @@ footer {
 }
 
 #cheesecakes, #tortas, #tortas-tematicas, #bocaditos {
-    padding-top: 6rem;
-    margin-top: -6rem;
+    padding-top: 8rem;
+    margin-top: -8rem;
 }
 
 

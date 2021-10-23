@@ -1,5 +1,4 @@
 function myFunction(x) { 
-    console.log(x);
     x.classList.toggle("change");
     var y = document.getElementById("myLinks");
     if (y.style.display == "block") {
@@ -13,6 +12,5 @@ function myFunction(x) {
   function dissapear(y) {
     y.style.display = "none";
     var x = document.getElementsByClassName("topnav")[0];
-    console.log(x);
     x.classList.toggle("change");
   }
