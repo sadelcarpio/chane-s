@@ -64,12 +64,13 @@ header {
 
 /* Burger icon */
 
-.container {
+.topnav {
     display: inline-block;
     cursor: pointer;
     position: absolute;
     right: 1rem;
     margin: 1rem 1rem 1rem 1rem;
+    overflow: hidden;
   }
 
 .bar1, .bar2, .bar3 {
@@ -148,7 +149,7 @@ main {
     display: block;
 }
 
-#scroll-title {
+.scroll-title-box h1 {
     font-size: 3rem;
 }
 
@@ -190,9 +191,6 @@ footer {
     flex-basis: 30vw;
 }
 
-.box2 {
-}
-
 .box3 {
     background-color: var(--font-color);
     width: 10vw;
@@ -203,6 +201,28 @@ footer {
     background-color: var(--font-color);
     width: 10vw;
     height: 5vh;
+}
+
+#myLinks {
+    display: none;
+    background-color: rgb(71, 9, 9);
+}
+
+#myLinks a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: block;
+    height: 3rem;
+    padding-top: 0.5rem;
+    padding-left: 0.8rem;
+    width: 100vw;
+    border-bottom: .2rem solid red;
+}
+
+#cheesecakes, #tortas, #tortas-tematicas, #bocaditos {
+    padding-top: 6rem;
+    margin-top: -6rem;
 }
 
 
