@@ -191,16 +191,6 @@ footer {
     flex-basis: 30vw;
 }
 
-.box3 {
-    width: 10vw;
-    height: 5vh;
-}
-
-.box4 {
-    width: 10vw;
-    height: 5vh;
-}
-
 #myLinks {
     display: none;
     background-color: rgb(71, 9, 9);
@@ -218,9 +208,7 @@ footer {
     border-bottom: .2rem solid red;
 }
 
-#cheesecakes, #tortas, #tortas-tematicas, #bocaditos {
+#cheesecakes, #tortas, #fototortas, #tortas-tematicas, #tortas-diabeticos, #bocaditos {
     padding-top: 8rem;
     margin-top: -8rem;
 }
-
-
