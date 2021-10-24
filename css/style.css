@@ -158,10 +158,11 @@ main {
     overflow-x:scroll;
     overflow-y: hidden;
 }
+
 ul {
     list-style:none;
     display: block;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
 li {
@@ -211,4 +212,12 @@ footer {
 #cheesecakes, #tortas, #fototortas, #tortas-tematicas, #tortas-diabeticos, #bocaditos {
     padding-top: 8rem;
     margin-top: -8rem;
+}
+
+li p {
+    position: relative;
+    display: none;
+    top: 3rem;
+    left: 2rem;
+    z-index: 9;
 }
