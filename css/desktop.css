@@ -19,7 +19,7 @@ html { /* Documento total */
 }
 
 p {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
@@ -121,12 +121,9 @@ main {
     flex-direction: column;
     margin: auto;
     padding: 1rem 1rem 1rem 1rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
-#intro {
-    margin: auto;
-}
 
 .presentacion{
     width: 100vw;
@@ -151,27 +148,28 @@ main {
 }
 
 .scroll-title-box h1 {
-    font-size: 3rem;
+    font-size: 6rem;
 }
 
 .scroll-wrapper {
-    width:100vw;
-    overflow-x:scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
 }
 
 .scroll-wrapper div {
-    display: inline-block;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    display: block;
+    margin: 1rem;
     position: relative;
-    height: 40vh;
+    height: auto;
     max-width: fit-content;
 }
 
 .scroll-wrapper div img {
-    height: 40vh;
+    height: auto;
+    max-width: 30vw;
     border-radius: 2rem;
     position: relative;
 }
@@ -181,7 +179,7 @@ main {
     margin: auto;
     height: auto;
     position: absolute;
-    top: 26vh;
+    top: 50%;
     left: 2vw;
     z-index: 10;
     background-color: rgba(122, 121, 121, 0.8);
@@ -228,4 +226,8 @@ footer {
 #cheesecakes, #tortas, #fototortas, #tortas-tematicas, #tortas-diabeticos, #bocaditos {
     padding-top: 8rem;
     margin-top: -8rem;
+}
+
+footer div a {
+    font-size: 2.5rem;
 }

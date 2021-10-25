@@ -1,5 +1,5 @@
 var scrolls = document.querySelectorAll('.scroll-wrapper > div');
-console.log(scrolls);
+
 // Descripción y precio de las imágenes
 
 for (scroll of scrolls) {
