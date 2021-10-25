@@ -1,3 +1,22 @@
+var scrolls = document.querySelectorAll('.scroll-wrapper > div');
+console.log(scrolls);
+// Descripción y precio de las imágenes
+
+for (scroll of scrolls) {
+  let img = scroll.querySelector('img');
+  let text = scroll.querySelector('div');
+  console.log(text.style.display);
+  img.addEventListener('click', function () {
+    if (text.style.display == 'none' || text.style.display == "") {
+      text.style.display = 'block';
+    }
+    else if (text.style.display == 'block'){
+      text.style.display = 'none';
+    }
+  });
+}
+
+
 function myFunction(x) { 
     x.classList.toggle("change");
     var y = document.getElementById("myLinks");
@@ -15,27 +34,3 @@ function dissapear(y) {
   x.classList.toggle("change");
 }
 
-let lis = document.querySelectorAll('#scroll-wrapper div');
-
-// Descripción y precio de las imágenes
-
-var li_test = lis[0];
-var img = li_test.querySelector('img');
-var p = li_test.querySelector('div');
-console.log(p);
-
-img.addEventListener('click', function () {
-  if (p.style.display == 'none' || p.style.display == "") {
-    p.style.display = 'block';
-  }
-  else if (p.style.display == 'block'){
-    p.style.display = 'none';
-  }
-})
-
-
-// for (li of lis) {
-//   img = li.querySelector('img');
-//   p = li.querySelector('p');
-//   console.log(p);
-// }
