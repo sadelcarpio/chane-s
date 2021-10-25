@@ -15,15 +15,23 @@ function dissapear(y) {
   x.classList.toggle("change");
 }
 
-let lis = document.querySelectorAll('li');
-console.log(lis);
+let lis = document.querySelectorAll('#scroll-wrapper div');
 
 // Descripción y precio de las imágenes
 
-li_test = lis[0];
-img = li_test.querySelector('img');
-p = li_test.querySelector('p');
-img.addEventListener('click', () => p.style.display = 'block');
+var li_test = lis[0];
+var img = li_test.querySelector('img');
+var p = li_test.querySelector('div');
+console.log(p);
+
+img.addEventListener('click', function () {
+  if (p.style.display == 'none' || p.style.display == "") {
+    p.style.display = 'block';
+  }
+  else if (p.style.display == 'block'){
+    p.style.display = 'none';
+  }
+})
 
 
 // for (li of lis) {
